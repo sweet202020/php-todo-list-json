@@ -30,10 +30,10 @@ Solo a questo punto sarà utile passare alla lettura della lista da un file JSON
             <ul>
                 <li v-for="task in tasks">{{task}}</li>
             </ul>
-            <form action="script.php" method="post">
-                <input type="text" name="newTask" id="newTask">
-                <button type="submit">add task</button>
-            </form>
+            <!-- <input v-model="newTask" type="text" name="newTask" id="newTask">
+            <button @click="saveTask" type="submit">add task</button> -->
+            <input v-model="task" type="text" name="task" id="task">
+            <button @click="saveTask" type="submit">add task</button>
         </div>
     </div>
     <!-- Bootstrap JavaScript Libraries -->

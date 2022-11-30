@@ -10,8 +10,12 @@ $ToDo_string = file_get_contents('list_tasks.json');
 /* var_dump($ToDo_string); */
 $ToDo = json_decode($ToDo_string);
 /* var_dump($ToDo); */
-if (isset($_POST['newTask'])) {
-    array_push($ToDo, $_POST['newTask']);
+/* if (isset($_POST['newTask'])) {
+    $newTask = $_POST['newTask'];
+    array_push($ToDo, $newtask); */
+if (isset($_POST['task'])) {
+    $task = $_POST['task'];
+    array_push($ToDo, $task);
 
     $jsonTasks = json_encode($ToDo);
     /* var_dump($jsonTasks); */

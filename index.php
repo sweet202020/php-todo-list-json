@@ -30,7 +30,7 @@ Solo a questo punto sarà utile passare alla lettura della lista da un file JSON
             <ul>
                 <li v-for="task in tasks">{{task}}</li>
             </ul>
-            <form action="server.php" method="post">
+            <form action="script.php" method="post">
                 <input type="text" name="newTask" id="newTask">
                 <button type="submit">add task</button>
             </form>

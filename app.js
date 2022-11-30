@@ -12,6 +12,7 @@ createApp({
                 .get(url)
                 .then(response => {
                     console.log(response);
+                    this.tasks = response.data
                 })
         }
     }, mounted() {

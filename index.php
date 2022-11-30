@@ -28,9 +28,7 @@ Solo a questo punto sarà utile passare alla lettura della lista da un file JSON
         <h1>tasks</h1>
         <div class="container">
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li v-for="task in tasks">{{task}}</li>
             </ul>
         </div>
     </div>
